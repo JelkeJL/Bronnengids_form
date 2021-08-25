@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Poging tot reacties</title>
+    <meta charset="UTF-8" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <img class="cemper" src="cemper.png"/>
+    <h2>Welke feedback heb je voor ons?</h2>
+    
+    <p>
+        <form id="feedback-form" autocomplete="off">
+            <input type="text" id="naam" placeholder="Naam"> <br/>
+            <textarea type="text" id="feedback" placeholder="Suggesties of tips" required style="width: 60%; height: 50px;"></textarea>
+            <input type="submit" value="Verzenden">
+        </form>
+    </p>
+      
+    <h2>Reacties</h2>
+    <div class= "reactieveld" id="reacties"></div>
+    <script src="functions.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </body>
+</html>
