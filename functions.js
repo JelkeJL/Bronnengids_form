@@ -11,11 +11,11 @@ function feedbackOplijsten(event) {
   let comments = document.querySelector("#reacties");
   let naam = document.querySelector("#naam");
   comments.innerHTML +=
-    "<div class='reactie'> <b>" +
+    "<div class='reactie'> <b><u>" +
     naam.value +
-    "</b>: " +
+    "</u>: " +
     kritiek.value +
-    "</div>";
+    "</b></div>";
   comments.innerHTML += "<hr/>";
   ///console.log(kritiek.value);
   ///comments.append(<div> ${kritiek.value} </div>);

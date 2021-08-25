@@ -1,12 +1,12 @@
 body {
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
   padding: 0 20px;
 }
 
 h1 h2,
 h3 {
   color: #231d3c;
-  font-family: tahoma;
+  font-family: "Raleway", "Poppins", sans-serif;
 }
 
 .reactieveld {
@@ -18,7 +18,7 @@ h3 {
 .reactie {
   background: rgba(128, 188, 184, 0.3);
   color: #302662;
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center;
   padding: 2px;
   margin: 8px;
@@ -28,12 +28,38 @@ h3 {
 
 .cemper {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 20px;
+  right: 20px;
   width: 250px;
   height: auto;
 }
 
 .content {
   margin-top: 150px;
+}
+
+form {
+  font-size: 12;
+}
+
+input {
+  margin: 5px;
+}
+
+button {
+  background-color: rgba(128, 188, 184, 0.3);
+  font-family: "Poppins", sans-serif;
+  border: 0 solid;
+  padding: 10px;
+  margin: 15px;
+  border-radius: 8px;
+  transition-delay: 4ms;
+  cursor: pointer;
+  color: #302662;
+  font-weight: 800;
+}
+
+button:hover {
+  background-color: rgba(128, 188, 184, 0.9);
+  color: white;
 }
