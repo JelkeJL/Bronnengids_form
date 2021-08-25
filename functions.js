@@ -6,7 +6,7 @@
 ///thirdForm.addEventListener("Submit", example_append);
 
 function feedbackOplijsten(event) {
-  event.preventDefault();
+  ///event.preventDefault();
   let kritiek = document.querySelector("#feedback");
   let comments = document.querySelector("#reacties");
   let naam = document.querySelector("#naam");
@@ -23,3 +23,17 @@ function feedbackOplijsten(event) {
 
 let formulier = document.querySelector("#feedback-form");
 formulier.addEventListener("submit", feedbackOplijsten);
+
+var form = document.getElementById("feedback-form");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  fetch(form.action, {
+    method: "POST",
+    body: new FormData(document.getElementById("feedback-form")),
+  })
+    .then((response) => response.json())
+    .then((html) => {
+      // you can put any JS code here
+      alert("success");
+    });
+});
