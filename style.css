@@ -7,6 +7,7 @@ h1 h2,
 h3 {
   color: #231d3c;
   font-family: "Raleway", "Poppins", sans-serif;
+  font-size: 5em;
 }
 
 .reactieveld {
@@ -19,6 +20,7 @@ h3 {
   background: rgba(128, 188, 184, 0.3);
   color: #302662;
   font-family: "Poppins", sans-serif;
+  font-size: 3.5em;
   text-align: center;
   padding: 2px;
   margin: 8px;
@@ -39,7 +41,7 @@ h3 {
 }
 
 form {
-  font-size: 12;
+  font-size: 4em;
 }
 
 input {
