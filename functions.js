@@ -34,6 +34,6 @@ form.addEventListener("submit", (e) => {
     .then((response) => response.json())
     .then((html) => {
       // you can put any JS code here
-      console.log("success");
+      document.getElementById("feedback-form").reset();
     });
 });
