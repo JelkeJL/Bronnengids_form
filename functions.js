@@ -38,6 +38,6 @@ form.addEventListener("submit", (e) => {
 });
 
 // Get all data
-axios.get("https://sheetdb.io/api/v1/58f61be4dda40").then((response) => {
+axios.get("https://sheetdb.io/api/v1/sc4bwl7mloob3").then((response) => {
   console.log(response.data);
 });
