@@ -50,7 +50,8 @@
 axios.get("https://sheetdb.io/api/v1/sc4bwl7mloob3").then((response) => {
   console.log(response.data);
   let reactie = document.querySelector(".output");
-  reactie.innerHTML += "<div class='reactie'>" + response.data[0]["feedback"] + "</div>"
+  for (var i = 0; i < data.length; i++){
+  reactie.innerHTML += "<div class='reactie'>" + response.data[i]["feedback"] + "</div>"}
 });
 </script>
 
