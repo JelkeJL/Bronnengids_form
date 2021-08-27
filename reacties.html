@@ -38,7 +38,13 @@
         <div class="col-md-60"></div>
       </div>
     </container>
-<script src="functions.js"></script>
-
   </body>
+  <script>  
+  // Get all data
+axios.get("https://sheetdb.io/api/v1/sc4bwl7mloob3").then((response) => {
+  console.log(response.data);
+});
+</script>
+
+
 </html>

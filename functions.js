@@ -36,8 +36,3 @@ form.addEventListener("submit", (e) => {
       document.getElementById("feedback-form").reset();
     });
 });
-
-// Get all data
-axios.get("https://sheetdb.io/api/v1/sc4bwl7mloob3").then((response) => {
-  console.log(response.data);
-});
