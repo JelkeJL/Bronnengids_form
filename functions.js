@@ -37,6 +37,7 @@ form.addEventListener("submit", (e) => {
     });
 });
 
+<script src="//cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>;
 // Get all data
 axios.get("https://sheetdb.io/api/v1/sc4bwl7mloob3").then((response) => {
   console.log(response.data);
