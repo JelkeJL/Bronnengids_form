@@ -36,7 +36,9 @@
           <img src="bronnengids_header.png" style="width: 85%;"></img>
         </div>
         <div class="col-md-12">
-            <div class="output"></div>
+            <div class="output">
+              <div class="reactie"> <b>Dit is een voorbeeldreactie</b></div>
+            </div>
         </div>
       </div>
     </container>
@@ -51,7 +53,7 @@ axios.get("https://sheetdb.io/api/v1/sc4bwl7mloob3").then((response) => {
   console.log(response.data);
   let reactie = document.querySelector(".output");
   for (var i = 0; i < response.data.length; i++){
-  reactie.innerHTML += "<div class='reactie'>" + response.data[i]["feedback"] + "</div>"}
+  reactie.innerHTML += "<div class='reactie'><b>" + response.data[i]["feedback"] + "</b></div>"}
 });
 </script>
 
